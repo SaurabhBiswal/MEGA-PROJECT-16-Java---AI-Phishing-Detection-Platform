@@ -1,0 +1,25 @@
+# Git ignore file for PhishGuard backend
+
+# ── NEVER commit these ──
+.env
+.env.local
+.env.production
+*.env
+
+# ── Maven ──
+target/
+*.class
+*.jar
+*.war
+
+# ── IDE files ──
+.idea/
+*.iml
+.vscode/settings.json
+.classpath
+.project
+.settings/
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
