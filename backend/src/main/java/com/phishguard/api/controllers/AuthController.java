@@ -75,4 +75,11 @@ public class AuthController {
 
         return ResponseEntity.ok("User registered successfully");
     }
+
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout() {
+        // Since we are using stateless JWT, the client handles deleting the token.
+        // We just return a 200 OK so the frontend doesn't throw an error.
+        return ResponseEntity.ok().body(java.util.Map.of("message", "Logged out successfully"));
+    }
 }
